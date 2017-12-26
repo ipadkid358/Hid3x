@@ -13,8 +13,8 @@
     // H3lix: org.tihmstar.h3lix
     // Yalu102: kim.cracksby.yalu102
     // Phoenix: supplies.wall.phoenix
-    NSArray *hide = @[@"com.newosxbook.jb.liberios", @"org.tihmstar.h3lix", @"kim.cracksby.yalu102", @"supplies.wall.phoenix"];
-    if ([hide containsObject:icon]) {
+    NSArray<NSString *> *hide = @[@"com.newosxbook.jb.liberios", @"org.tihmstar.h3lix", @"kim.cracksby.yalu102", @"supplies.wall.phoenix"];
+    if ([hide containsObject:icon.applicationBundleID]) {
         return NO;
     }
     

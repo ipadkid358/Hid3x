@@ -1,7 +1,7 @@
 Package: com.ipadkid.hid3x
 Name: Hid3x
 Depends: mobilesubstrate
-Version: 0.0.3
+Version: 0.0.4
 Architecture: iphoneos-arm
 Description: Hide the H3lix, Yalu102, Phœnix, and LiberIOS offical icons (requires Substrate to be active, so it will only be hidden while jailbroken)
 Maintainer: ipad_kid <ipadkid358@gmail.com>
