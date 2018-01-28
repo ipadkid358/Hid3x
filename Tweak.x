@@ -15,7 +15,8 @@
     // Phoenix: supplies.wall.phoenix
     // mach_portal: com.qwertyoruiopz.zmach-portal
     // extra_recipe: com.example.extra-recipe
-    NSArray<NSString *> *hide = @[@"com.newosxbook.jb.liberios", @"org.tihmstar.h3lix", @"kim.cracksby.yalu102", @"supplies.wall.phoenix", @"com.qwertyoruiopz.zmach-portal", @"com.example.extra-recipe"];
+    // Electra: org.coolstar.electra
+    NSArray<NSString *> *hide = @[@"com.newosxbook.jb.liberios", @"org.tihmstar.h3lix", @"kim.cracksby.yalu102", @"supplies.wall.phoenix", @"com.qwertyoruiopz.zmach-portal", @"com.example.extra-recipe", @"org.coolstar.electra"];
     if ([hide containsObject:icon.applicationBundleID]) {
         return NO;
     }
