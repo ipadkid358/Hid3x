@@ -1,7 +1,7 @@
 // valid for iOS 4 - 11.1
 @interface SBApplicationIcon
 - (NSString *)applicationBundleID;
-    @end
+@end
 
 // valid for iOS 3 - 11.1
 %hook SBIconModel
@@ -9,17 +9,19 @@
 // requires a respring, only called on SpringBoard load
 - (BOOL)isIconVisible:(SBApplicationIcon *)icon {
     // Just add any bundle IDs you want to this array
-    // ----------------------------------------------
-    // LiberiOS: com.newosxbook.jb.liberios
-    // H3lix: org.tihmstar.h3lix
-    // Yalu102: kim.cracksby.yalu102
-    // Phoenix: supplies.wall.phoenix
-    // mach_portal: com.qwertyoruiopz.zmach-portal
-    // extra_recipe: com.example.extra-recipe
-    // Electra: org.coolstar.electra
-    // Meridian: zone.sparkes.MeridianJB
-    // g0blin: net.sticktron.g0blin
-    NSArray<NSString *> *hide = @[@"com.newosxbook.jb.liberios", @"org.tihmstar.h3lix", @"kim.cracksby.yalu102", @"supplies.wall.phoenix", @"com.qwertyoruiopz.zmach-portal", @"com.example.extra-recipe",  @"org.coolstar.electra", @"zone.sparkes.MeridianJB", @"net.sticktron.g0blin"];
+    NSArray<NSString *> *hide = @[
+        @"com.newosxbook.jb.liberios",      // LiberiOS
+        @"org.tihmstar.h3lix",              // h3lix
+        @"kim.cracksby.yalu102",            // Yalu102
+        @"supplies.wall.phoenix",           // Phoenix
+        @"com.qwertyoruiopz.zmach-portal",  // mach_portal
+        @"com.example.extra-recipe",        // extra_recipe
+        @"org.coolstar.electra",            // Electra
+        @"zone.sparkes.MeridianJB",         // Meridian
+        @"net.sticktron.g0blin",            // g0blin
+        @"org.tihmstar.doubleH3lix"         // doubleH3lix
+    ];
+    
     if ([hide containsObject:icon.applicationBundleID]) {
         return NO;
     }

@@ -1,9 +1,9 @@
 Package: com.ipadkid.hid3x
 Name: Hid3x
 Depends: mobilesubstrate
-Version: 0.0.6
+Version: 0.0.7
 Architecture: iphoneos-arm
-Description: Hide the H3lix, Yalu102, Phoenix, mach_portal, extra_recipe, Electra, Meridian, g0blin, and LiberiOS offical icons (requires Substrate to be active, so it will only be hidden while jailbroken)
+Description: Hide the LiberiOS, H3lix, Yalu102, Phoenix, mach_portal, extra_recipe, Electra, Meridian, g0blin, and doubleH3lix offical icons (requires Substrate to be active, so it will only be hidden while jailbroken)
 Maintainer: ipad_kid <ipadkid358@gmail.com>
 Author: ipad_kid <ipadkid358@gmail.com>
 Section: Tweaks
