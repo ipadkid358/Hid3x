@@ -20,6 +20,7 @@
         @"zone.sparkes.MeridianJB",         // Meridian
         @"net.sticktron.g0blin",            // g0blin
         @"org.tihmstar.doubleH3lix"         // doubleH3lix
+        @"com.sxx.sockH3lix"                // sockH3lix
     ];
     
     if ([hide containsObject:icon.applicationBundleID]) {
